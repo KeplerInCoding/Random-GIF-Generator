@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* css background-image generated using https://10015.io/tools/css-background-pattern-generator */
+
+ .background {
+   background: 
+      radial-gradient(circle farthest-side at 0% 50%, #2c4d57 23.5%, #0000 0) 33.6px 48px,
+      radial-gradient(circle farthest-side at 0% 50%, #692644 24%, #0000 0) 30.4px 48px,
+      linear-gradient(#2c4d57 14%, #0000 0, #0000 85%, #2c4d57 0) 0 0,
+      linear-gradient(150deg, #2c4d57 24%, #692644 0, #692644 26%, #0000 0, #0000 74%, #692644 0, #692644 76%, #2c4d57 0) 0 0,
+      linear-gradient(30deg, #2c4d57 24%, #692644 0, #692644 26%, #0000 0, #0000 74%, #692644 0, #692644 76%, #2c4d57 0) 0 0,
+      linear-gradient(90deg, #692644 2%, #2c4d57 0, #2c4d57 98%, #692644 0%) 0 0 #2c4d57;
+   background-size: 64px 96px;
+   background-color: #2c4d57;
+ }
+
+
+/* css loader generated using https://10015.io/tools/css-loader-generator */
+
+
+
+
+
+
+
+.parallex{
+   height:100vh;
+   overflow-y:auto;
+   overflow-x:hidden;
+   perspective:0.5px;
+}
+
+.layer1{
+   transform: translateZ(-2px) scale(4.1);
+}
+
+.layer2{
+   transform: translateZ(0px);
+}
+
+.heading{
+   transform: translateZ(5px);
+}
+
+
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   padding: 1.1px;
+   background: conic-gradient(#0000 10%,#ffffff) content-box;
+   -webkit-mask: repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+        radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 9px));
+   -webkit-mask-composite: destination-in;
+   mask-composite: intersect;
+   animation: spinner-d55elj 1s infinite steps(10);
+}
+
+@keyframes spinner-d55elj {
+   to {
+      transform: rotate(1turn);
+   }
+}
