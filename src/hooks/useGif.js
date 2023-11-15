@@ -14,7 +14,7 @@ const useGif = (tag) => {
 
     async function fetchData(tag) {
       setLoading(true);
-        const {data} = await axios.get(tag ? (`${url}&tag=${tag}`):(url));
+        const {data} = await axios.get(tag ? `${url}&tag=${tag}`: url);
         const imgSrc = data.data.images.downsized_large.url;
         setGif(imgSrc);
         setLoading(false);
